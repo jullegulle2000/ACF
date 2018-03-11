@@ -18,16 +18,16 @@
 	local ClassData = list.Get("ACFClasses").GunClass[Class]
 	
 	local Attachment = "muzzle"
-	local longbarrel = ClassData.longbarrel
-	if longbarrel ~= nil then
-		if Gun:GetBodygroup( longbarrel.index ) == longbarrel.submodel then
-			Attachment = longbarrel.newpos
-		end
-	end
+	--local longbarrel = ClassData.longbarrel
+	--if longbarrel ~= nil then
+	--	if Gun:GetBodygroup( longbarrel.index ) == longbarrel.submodel then
+	--		Attachment = longbarrel.newpos
+	--	end
+	--end
 	
-	if( CLIENT and not IsValidSound( Sound ) ) then
-		Sound = ClassData["sound"]
-	end
+	--if( CLIENT and not IsValidSound( Sound ) ) then
+	--	Sound = ClassData["sound"]
+	--end
 		
 	if Gun:IsValid() then
 		if Propellant > 0 then
